@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0ee8544f-1f40-462d-8cd3-76a6e1fd3003">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="postgresTCE"/>
+	<parameter name="name" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="district" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="city" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="zipCode" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="uf" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="phoneNumber" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="address" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="nameCompany" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="addressCompany" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="cityCompany" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="ufCompany" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="districtCompany" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="telCompany" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="zipCodeCompany" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="nameLegalRepresentative" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="officeLegalRepresentative" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="nameSupervisor" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<parameter name="officeSupervisor" class="com.unipampa.sete.dto.InternshipDTO"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="132" splitType="Stretch">
+			<image>
+				<reportElement x="180" y="0" width="200" height="132" uuid="c19af831-e957-4c57-a322-b570d7522d01"/>
+				<imageExpression><![CDATA["https://resourcesrpvi.s3.sa-east-1.amazonaws.com/assinatura_visual_unipampa_vertical_cor.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="276" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="10" width="550" height="18" uuid="e47b1ec5-bf78-4fc0-91e6-96bbdf45f321"/>
+				<textElement textAlignment="Center">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TERMO DE COMPROMISSO DE ESTÁGIO - TCE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="555" height="20" uuid="9e0e3fb1-c6e9-49d3-9e43-fd1946b0da85"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Fundamento Legal – Lei nº 11.788, de 25 de setembro de 2008.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="58" width="555" height="34" uuid="fbb847ab-2ae7-4e99-a043-eb3f6398e6b7"/>
+				<textElement textAlignment="Justified">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[	Com base na legislação vigente, as partes a seguir nomeadas acordam e estabelecem entre si as cláusulas e condições que regerão este Termo de Compromisso de Estágio.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="136" width="265" height="20" uuid="5f25a861-4c5c-482c-9965-e1fa0a5ac33d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="136" width="290" height="20" uuid="6cdb4e09-289c-4c64-8c4f-591316f1ff2c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="156" width="149" height="20" uuid="5b8e8ad6-7f46-464a-9bd6-5e0703e02fdf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="156" width="265" height="20" uuid="376e8452-331e-4f9c-aed4-bdc2af12940a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="176" width="290" height="20" uuid="07c27738-0e5c-4409-899c-eabf576f5ebc"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="176" width="172" height="20" uuid="734696af-c985-4895-a4b8-698bea11513e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="196" width="290" height="20" uuid="e271822f-d991-4347-8c14-91fa8ede6345"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="196" width="265" height="20" uuid="c6fc2ae6-a9f3-41d5-9197-fa18229dc45c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="216" width="290" height="20" uuid="21151bd6-0510-4a34-8400-d671735057ce"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="216" width="265" height="20" uuid="beb7dc3a-356a-49aa-8aa7-a2ce00f02ddc"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="5" y="220" width="58" height="16" uuid="88591649-83c1-4f62-a69e-3ede8c3a1cfa"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Semestre:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="200" width="35" height="16" uuid="df10756d-0873-4bb4-881d-704a617334a8"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[CI nº:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="172" y="176" width="93" height="20" uuid="8144602d-dfa7-4030-9fb8-fa2aa3a112d2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="236" width="265" height="20" uuid="4897f3a5-5541-4401-9adb-b3bd7b069296"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="236" width="290" height="20" uuid="1fa36be3-1cd7-40ae-aaf6-cddaf7b50c62"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="256" width="555" height="20" uuid="8a5bb54f-2542-4a6d-94d5-f96833f74aa5"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="5" y="240" width="48" height="16" uuid="13eac9d0-5834-49a6-9fc4-4b7b483c871e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Campus:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="140" width="41" height="16" uuid="f53390b5-cf98-4cb9-b078-9e66de0031bb"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Email:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="414" y="156" width="141" height="20" uuid="33d5212c-7e40-450d-8eb0-13a626bc40ba"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="270" y="220" width="41" height="16" uuid="bd070ac4-9bd5-4524-9b74-d70f7beee462"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Curso:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="200" width="100" height="16" uuid="8dc270e1-d7e6-42c2-bdcd-76f8ab3b2b70"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[CPF:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="240" width="100" height="16" uuid="ceb53390-f5ef-45b5-89d0-1de6a094272c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Matrícula nº:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="260" width="89" height="16" uuid="0b436c3a-9ac5-4d98-b58a-e924b7da58a3"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Estágio curricular:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="216" y="114" width="100" height="20" uuid="e3c862e1-1065-4a55-8ab3-081f67c7f78c"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESTAGIÁRIO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="5" y="136" width="260" height="19" uuid="f40ab0ed-28d9-4281-8dc8-2103d474e816"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nome: " + $P{name}.getIntern().getName()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="160" width="260" height="16" uuid="630f1f5c-a128-43fc-8dc1-2dacfd4b8f44"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Endereço: " + $P{address}.getIntern().getAddress().getStreet()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="180" width="167" height="16" uuid="98e02048-282c-480c-97bd-ea84614cc366"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Cidade: " + $P{city}.getIntern().getAddress().getCity()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="160" width="144" height="16" uuid="bee044c1-edd7-46d9-9413-417b2bcbedcc"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Bairro: " + $P{district}.getIntern().getAddress().getDistrict()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="180" width="285" height="16" uuid="2be70919-7162-430a-ad9b-e78c75282915"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Telefone: " + $P{phoneNumber}.getIntern().getPhoneNumber()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="419" y="160" width="137" height="16" uuid="5b3d66a4-e893-4759-a987-e3399b72638d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["CEP: " +$P{zipCode}.getIntern().getAddress().getZipCode()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="177" y="180" width="88" height="16" uuid="33ae33bf-28e0-48b2-ac79-777a92b40b0c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["UF: " + $P{uf}.getIntern().getAddress().getState()]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="241">
+			<staticText>
+				<reportElement x="126" y="4" width="321" height="20" uuid="8a85812f-32ea-4ecb-86b0-7687dbf85024"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIDADE CONCEDENTE/SETOR DA UNIPAMPA
+]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="20" width="555" height="20" uuid="2e9e7c4c-7e49-41a8-aae7-b601eb8bceec"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="40" width="265" height="20" uuid="87a071b0-849f-4c49-bf37-651bdf4e01a8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="40" width="149" height="20" uuid="f4968112-243c-491f-803f-b42ec6195130"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="414" y="40" width="141" height="20" uuid="316502d1-4ca0-4be2-afaf-c423d92a819f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="60" width="172" height="20" uuid="60a66164-77af-4e75-b486-0d885687eab2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="172" y="60" width="93" height="20" uuid="40b7318a-0317-45c0-91c1-b135f3f2bfd2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="60" width="290" height="20" uuid="d067a672-c153-4818-8110-48dc88696ad1"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="80" width="265" height="20" uuid="7c911a75-b042-49d5-963f-26dd3d39eb3b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="80" width="290" height="20" uuid="4386165f-ceca-4b43-9888-a405e382568d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="100" width="265" height="38" uuid="25bdc255-0e84-4190-8d42-91f43e0d45d7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="100" width="290" height="38" uuid="f82a333f-920b-4028-aa26-673e4789a797"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="138" width="265" height="39" uuid="70461fda-4b70-4c7c-b9ba-bba40b69cb3c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="138" width="290" height="39" uuid="92c227ad-77c1-466c-8841-4bcd36651042"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="5" y="83" width="100" height="16" uuid="88067c3e-f6f1-40b3-b249-061978690c2a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[CNPJ: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="83" width="68" height="16" uuid="dfae6ab9-eefe-4edd-a972-7c9d1169497c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Setor do edital: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="177" width="555" height="64" uuid="ac3f7033-0299-4feb-bafa-bf48c7f36ecf"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[  * O Diretor do campus é o Representante Legal da Unipampa em relação ao setor/laboratório/coordenação que oferta a vaga de estágio.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="210" width="555" height="30" uuid="85afa5c5-7683-462a-a222-f5fb2864064c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[  ** Servidor com formação/experiência na área do estagiário em formação]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="4" y="24" width="548" height="16" uuid="f821fb9a-2327-49cf-82cd-f38c46708e5d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Razão social: " + $P{nameCompany}.getCompany().getName()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="43" width="260" height="16" uuid="205c9a97-0458-4976-b9e7-f63462400935"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Endereço: " + $P{addressCompany}.getCompany().getAddress().getStreet()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="63" width="163" height="16" uuid="8c47d7da-152e-4e46-9641-41f790802b87"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Cidade: " + $P{cityCompany}.getCompany().getAddress().getCity()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="177" y="63" width="89" height="16" uuid="9338ad19-e90f-4f5d-b329-9e7fbe44e370"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["UF: " + $P{ufCompany}.getCompany().getAddress().getState()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="43" width="145" height="16" uuid="89d2aa22-9245-4fe6-8e1a-fffec60fdca6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Bairro: " + $P{districtCompany}.getCompany().getAddress().getDistrict()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="63" width="281" height="16" uuid="e3d0ee27-c0ac-4968-bc58-26adeaa98266"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Telefone: " + $P{telCompany}.getCompany().getPhoneNumber()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="40" width="140" height="20" uuid="b01502e4-2030-4812-a423-a8cb5d0d7c0f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["CEP: " + $P{zipCodeCompany}.getCompany().getAddress().getZipCode()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="102" width="260" height="38" uuid="2444a6ff-3509-4964-8248-03f24235d212"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["* Nome do representante legal: " + $P{nameLegalRepresentative}.getCompany().getNameLegalRepresentative()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="102" width="280" height="36" uuid="fb63af3c-2eb2-43e3-b8aa-227c1fbb2690"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Cargo: " + $P{officeLegalRepresentative}.getCompany().getOfficeLegalRepresentative()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="142" width="254" height="30" uuid="de8421e8-aa2e-4729-93e0-b4789fbc8c20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["** Nome supervisor: " + $P{nameSupervisor}.getCompany().getNameSupervisor()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="138" width="280" height="30" uuid="8cbe0e19-3ee4-4cc1-9c52-1f7393ea4f33"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Cargo: " + $P{officeSupervisor}.getCompany().getOfficeSupervisor()]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="196">
+			<staticText>
+				<reportElement x="168" y="17" width="198" height="20" uuid="29883430-bf1f-4590-ac6b-8bf380b66cfb"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INSTITUIÇÃO DE ENSINO
+]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="32" width="265" height="20" uuid="2b3a357a-4c11-485a-b179-97eca005654f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="32" width="290" height="20" uuid="277cf94f-1991-4763-8ad8-bc21155cbbde"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="52" width="265" height="20" uuid="5729f230-8b66-4a63-940f-d253fc86e59a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="52" width="170" height="20" uuid="951062c0-ad20-4ee5-9616-7a6c511887cb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="435" y="52" width="120" height="20" uuid="8a3e6ca3-37dc-4e97-8b19-9d11c970deb4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="72" width="168" height="20" uuid="41b17613-deef-43bd-a1e3-d6684a989ea8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="168" y="72" width="97" height="20" uuid="be856142-f1ee-4d9b-b893-a5efda540deb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="72" width="290" height="20" uuid="b28ceae5-922b-4077-aaa7-8fe0d86ef38d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="92" width="555" height="20" uuid="4b34eed2-ba71-486f-aab6-f41e72fc635a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="112" width="265" height="42" uuid="60dcf763-552c-4074-9d20-b0c8db30f8b7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="265" y="112" width="290" height="42" uuid="76751c77-9bc8-49c3-818f-0f77994d169a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="154" width="555" height="42" uuid="442a1696-0fff-437c-8f75-ab5857aa721a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="5" y="35" width="63" height="14" uuid="61994c27-6dd5-4967-a43a-f421588dc64d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Razão social:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="54" width="66" height="16" uuid="b6af8652-3e11-4d5e-a8ad-224d1cd1418a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Endereço:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="54" width="41" height="18" uuid="bbff1d1b-e299-4358-a6f8-ffebd09b5981"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Bairro:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="54" width="30" height="18" uuid="39516a59-fc57-4492-b6b9-38086c04908b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[CEP:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="74" width="66" height="18" uuid="c5be0d05-e56b-45b6-bafe-1a3230127547"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Cidade: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="74" width="23" height="18" uuid="b8985447-a110-4272-a6ba-d73398488f98"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[UF:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="74" width="46" height="18" uuid="dab176aa-8bbd-4dbc-97d6-a40c9a0ebd51"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Telefone: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="94" width="30" height="18" uuid="cabf2662-cd4c-4f00-a193-a2e89368f679"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[CNPJ: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="115" width="163" height="20" uuid="00ba9a44-4344-4fac-9224-89653bc66055"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nome do Representante legal: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="115" width="35" height="20" uuid="295ac13c-1e81-4f0d-9df7-ff4344252931"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Cargo: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="157" width="163" height="20" uuid="fafc9aa9-be28-41ea-82b4-cb0645bc3317"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nome do orientador Estágio:]]></text>
+			</staticText>
+		</band>
+		<band height="559">
+			<staticText>
+				<reportElement x="5" y="10" width="155" height="20" uuid="1aea8cbb-a7b4-4056-8a18-e48898265eb8"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLÁUSULAS DO TCE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="31" width="155" height="20" uuid="b8bd8341-b9ef-48e6-b443-114c39aaf6ad"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLÁUSULA 1ª – OBJETO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="52" width="550" height="68" uuid="e21a91e8-0de7-4e80-b493-4477ad1ba70a"/>
+				<textElement textAlignment="Justified">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Esse TCE decorre e fica vinculado ao Convênio, instrumento jurídico facultativo às instituições de
+ensino conforme o Artigo 8º da Lei 11.788/08, celebrado entre a UNIPAMPA e a UNIDADE CONCEDENTE, e tem por finalidade proporcionar experiência prática na linha de formação do Estagiário, em complemento e aperfeiçoamento do seu curso.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="126" width="155" height="20" uuid="387fed1d-6c3e-4c9f-98ab-899c3fdb6456"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLÁUSULA 2ª – VIGÊNCIA
+O presente TCE vigerá de 01/02/2021 à 03/05/2021 podendo ser prorrogado por igual período. A cada
+06 (seis) meses, o “ESTAGIÁRIO”, obrigatoriamente, comprovará sua aprovação escolar e freqüência regular
+no período anterior, sob pena de rescisão do TCE a que se refere esta cláusula.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="147" width="551" height="46" uuid="f977ed25-485b-4344-ba5e-84744e2af261"/>
+				<textElement textAlignment="Justified">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[O presente TCE vigerá de 01/02/2021 à 03/05/2021 podendo ser prorrogado por igual período. A cada 06 (seis) meses, o “ESTAGIÁRIO”, obrigatoriamente, comprovará sua aprovação escolar e freqüência regular no período anterior, sob pena de rescisão do TCE a que se refere esta cláusula.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="193" width="398" height="19" uuid="4d63f48a-3c1f-442c-a29d-17fffbd43080"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLÁUSULA 3ª – LOCAL, ATIVIDADES, JORNADA E RECESSO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="212" width="551" height="342" uuid="505dee35-c0b1-4e44-9666-95807045e2ac"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[	As atividades a serem desenvolvidas durante o estágio, objeto do presente TCE, constarão no Plano de Atividades construído pelo ESTAGIÁRIO em conjunto com a UNIDADE CONCEDENTE e orientado por professor da UNIPAMPA.
+
+	O Plano de Atividades do estagiário deverá ser incorporado ao TCE por meio de aditivos à medida que for avaliado, progressivamente, o desempenho do estudante, (Art. 7º, parágrafo único da Lei nº
+11.788/08).
+
+	As atividades não podem exceder a 4 horas diárias, perfazendo um total de 20 horas semanais, e deve ser realizado em período compatível com o seu horário escolar, e serão desenvolvidas pelo ESTAGIÁRIO
+no setor da UNIDADE CONCEDENTE.
+
+	A jornada diária será das 8:00 às 12:00 .
+
+	Nos períodos de férias acadêmicas, a jornada de estágio será estabelecida de comum acordo entre o ESTAGIÁRIO e a UNIDADE CONCEDENTE.
+
+	É assegurado ao estagiário, sempre que o estágio tenha duração igual ou superior a 1 (um) ano, período de recesso de 30 (trinta) dias, a ser gozado preferencialmente durante suas férias escolares.]]></text>
+			</staticText>
+		</band>
+		<band height="554">
+			<staticText>
+				<reportElement x="5" y="10" width="398" height="19" uuid="847ae583-60d9-428f-832a-90058c938de2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLÁUSULA 4ª – SEGURO CONTRA ACIDENTES PESSOAIS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="29" width="550" height="130" uuid="b5f07108-bffc-47e4-afa9-09d0f573ef4c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[	Na vigência do presente TCE, o ESTAGIÁRIO será incluído na cobertura do Seguro Contra Acidentes
+Pessoais, nos Termos do Inciso IV e do parágrafo único do Art. 9º da Lei nº 11.788/08, sob responsabilidade
+da ACECOM COMÉRCIO DE MÁQUINAS E EQUIPAMENTOS DE INFORMÁTICA LTDA , apólice nº 10344336
+, da Companhia HUMBER CORRETORA DE SEGUROS , conforme Certificado Individual de
+Seguro, fornecido ao estagiário.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="164" width="398" height="19" uuid="dc3a1e21-8e14-4a93-a224-a8c98525157f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLÁUSULA 5ª – DO VÍNCULO EMPREGATÍCIO
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="184" width="550" height="30" uuid="837195cb-4728-4454-8fe9-77a635f8e7cd"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[	Nos termos do disposto no Art. 3º da Lei nº 11.788/08 o estágio não criará vínculo empregatício de
+qualquer natureza entre o ESTAGIÁRIO, a UNIDADE CONCEDENTE e a UNIPAMPA.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="218" width="398" height="19" uuid="77adea17-b808-4677-9ed7-2c9f2c3c08c4"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLÁUSULA 6ª – DA BOLSA E AUXÍLIO TRANSPORTE
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="239" width="550" height="276" uuid="0aa015f4-0208-4864-9e09-3f402746ed2b"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[	O estágio será:
+
+	☐ Remunerado, pelo qual o estagiário receberá uma bolsa de Complementação Educacional mensal,
+no valor de R$ 0,00, que deverá ser paga até o 5º (quinto) dia útil do mês subseqüente.
+
+	X Não remunerado, conforme permite o Art. 12º da Lei nº 11.788/08, devendo, porém, objetivar a
+complementação do ensino e da aprendizagem profissional do aluno.
+
+	A concessão de bolsa ou outra forma de contraprestação, bem como o auxílio transporte é compulsória
+somente na hipótese de estágio curricular não obrigatório.
+
+	O estagiário receberá auxílio transporte no valor de R$ 0,00, pago até o 1º (primeiro) dia do mês, e
+outros auxílios como]]></text>
+			</staticText>
+		</band>
+		<band height="578">
+			<staticText>
+				<reportElement x="5" y="5" width="398" height="19" uuid="0c831254-26a7-46a1-944c-37658b656b28"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLÁUSULA 7ª – ATRIBUIÇÕES E RESPONSABILIDADES Da UNIDADE CONCEDENTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="24" width="550" height="554" uuid="4598801b-b0a2-4c7a-b10e-26281269901a"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[	a. Celebrar esse termo de compromisso com a UNIPAMPA e o educando, zelando por seu cumprimento;
+
+	b. Ofertar instalações que tenham condições de proporcionar ao educando atividades de aprendizagem
+social, profissional e cultural;
+
+	c. Indicar funcionário de seu quadro de pessoal, com formação ou experiência profissional na área de
+conhecimento desenvolvida no curso do estagiário, para orientar e supervisionar até 10 (dez)
+estagiários simultaneamente;
+
+	d. Por ocasião do desligamento do estagiário, entregar termo de realização do estágio com indicação
+resumida das atividades desenvolvidas, dos períodos e da avaliação de desempenho;
+
+	e. Manter à disposição da fiscalização documentos que comprovem a relação de estágio;
+
+	f. Enviar à UNIPAMPA, com periodicidade mínima de 6 (seis) meses, relatório de atividades, com vista
+obrigatória ao estagiário.
+
+	g. Comunicar à UNIPAMPA dados básicos sobre o andamento do estágio, bem como irregularidades que
+justifiquem intervenção;
+
+	h. Subsidiar a UNIPAMPA com informações que propiciem o aprimoramento do sistema acadêmico e do
+próprio estágio;
+
+	i. Comunicar à UNIPAMPA em caso de prorrogação ou rescisão deste TCE ou, também, em caso de
+efetivação do estudante;
+
+	j. Propiciar ao ESTAGIÁRIO, sempre que o estágio tenha duração igual ou superior a 1 (um) ano, período
+de recesso de 30 (trinta) dias, a ser gozado preferencialmente em suas férias escolares. O recesso
+deverá ser remunerado quando o estagiário receber bolsa ou outra forma de contraprestação, e os dias
+de recesso previstos serão concedidos de maneira proporcional, nos casos de o estágio ter duração
+inferior a 1 (um) ano.
+]]></text>
+			</staticText>
+		</band>
+		<band height="578">
+			<staticText>
+				<reportElement x="5" y="10" width="398" height="19" uuid="c57fb186-9846-4b2c-b06b-754475d6e3b2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLÁUSULA 8ª – INTERRUPÇÃO DA VIGÊNCIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="30" width="550" height="250" uuid="1d8e5c92-bbec-4d1f-b5e0-939da53cc3ec"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[	A interrupção da vigência ocorrerá por:
+
+	a. Não cumprimento do convencionado neste TCE;
+
+	b. Colação de grau de nível superior, reprovação, abandono ou mudança de curso ou trancamento de
+	matrícula pelo ESTAGIÁRIO;
+
+	c. Interrupção de vigência do TCE com a UNIPAMPA;
+
+	d. Abandono do estágio;
+
+	e. Pedido de substituição do ESTAGIÁRIO, por parte da UNIDADE CONCEDENTE do estágio;
+
+	f. Manifestação, por escrito, de qualquer das partes.]]></text>
+			</staticText>
+		</band>
+		<band height="578">
+			<staticText>
+				<reportElement x="140" y="360" width="252" height="20" uuid="e2d913c4-b287-49ee-9285-3da31e2e7918"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLANO DE ATIVIDADES DO ESTAGIÁRIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="390" width="488" height="166" uuid="8d220ce4-ed8a-4c22-9480-89db8791d6f2"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Descreva aqui o plano de atividades do estagiario.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="8" width="398" height="19" uuid="a19ae0a6-d856-43e1-9a36-c8a865fd94e4"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLÁUSULA 9ª – FORO]]></text>
+			</staticText>
+			<line>
+				<reportElement x="44" y="165" width="160" height="1" uuid="22795a16-a64b-4a13-b27e-7d2a545becd6"/>
+			</line>
+			<line>
+				<reportElement x="333" y="166" width="160" height="1" uuid="07a92d14-4f4c-480d-a04b-1a55bdae7b3d"/>
+			</line>
+			<line>
+				<reportElement x="44" y="275" width="160" height="1" uuid="63034e7b-40c1-40e0-906d-dcd3b54a78bc"/>
+			</line>
+			<line>
+				<reportElement x="334" y="275" width="160" height="1" uuid="22ceb80a-c159-4eeb-b547-f2077153b3a5"/>
+			</line>
+			<staticText>
+				<reportElement x="30" y="172" width="192" height="30" uuid="7dab5103-75b4-437e-a51f-fe09a8dd5c17"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[UNIDADE CONCEDENTE
+(Diretor do Campus/Chefia setor Reitoria)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="173" width="192" height="30" uuid="8ad5bde1-1af5-4495-bce6-24091c5c4a58"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[INSTITUIÇÃO DE ENSINO
+(Coordenador Acadêmico)
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="338" y="139" width="206" height="20" uuid="937d6904-76f2-4ef1-8035-846dbc9c4737"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Alegrete - RS , 1 de Fevereiro de 2021 .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="280" width="100" height="14" uuid="9564720c-e827-4329-9004-ce3d6c20e4c5"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[ESTAGIÁRIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="367" y="279" width="100" height="14" uuid="3a85f557-c771-479b-84ea-066af13edb9e"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Orientador]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="27" width="550" height="328" uuid="ac1433db-c015-4314-82d0-6c6e00da0ad3"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[	As partes elegem o foro de Bagé/RS, com expressa renúncia de outro, por mais privilegiado que seja,
+para dirimir qualquer questão emergente do presente TCE.
+
+	E por estarem de comum acordo com as condições do TCE, as partes o assinam em 04 vias de igual
+teor.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="38" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
